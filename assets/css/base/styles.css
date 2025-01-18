@@ -1,0 +1,131 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILO GLOBAL */
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", sans-serif;
+    background-color: #F5F5F5;
+    line-height: 1.6;
+    color: #222222;
+    padding: 5px;
+}
+
+/* CORES PRINCIPAIS */
+:root {
+    --cor-vermelho: #C4170C;
+    --cor-cinza-escuro: #333333;
+    --cor-branco-gelo: #F5F5F5;
+    --cor-vermelho-vinho: #8B0000;
+    --cor-azul-aco: #4682B4;
+}
+
+/* CABEÇALHO */
+#head {
+    background-color: var(--cor-azul-aco);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+#logo h1 {
+    font-size: 2em;
+    color: var(--cor-branco-gelo);
+    margin: 0;
+    white-space: nowrap; /* Impede quebra de linha no título */
+}
+#logo .red {
+    color: var(--cor-vermelho);
+}
+
+/* MENU */
+#menu {
+    display: flex;
+    gap: 15px;
+}
+#menu a {
+    text-decoration: none;
+    color: var(--cor-branco-gelo);
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+#menu a:hover {
+    background-color: var(--cor-vermelho-vinho);
+}
+
+/* MENU HAMBÚRGUER */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background: var(--cor-branco-gelo);
+}
+
+@media (max-width: 768px) {
+    #logo h1 {
+        font-size: 1.5em; /* Reduz tamanho da logo */
+    }
+
+    #menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: var(--cor-azul-aco);
+        border-radius: 5px;
+        padding: 10px;
+        z-index: 10; /* Garante que o menu fique acima de outros elementos */
+    }
+
+    #menu.active {
+        display: flex; /* Mostra o menu ao clicar no botão */
+    }
+
+    .menu-toggle {
+        display: flex; /* Exibe o botão de menu */
+    }
+}
+
+@media (max-width: 768px) { /* Ajuste para Layout Responsivo */
+    #arealateral {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+#postagem  {
+    width: 780px; /* Largura fixa ou ajustável */
+    margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona espaçamento inferior */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* ÁREA LATERAL */
+#arealateral {
+    width: 300px; /* Largura fixa ou ajustável */
+    margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona espaçamento inferior */
+    padding: 15px;
+    background-color: var(--cor-cinza-escuro);
+    color: var(--cor-branco-gelo);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#arealateral h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--cor-branco-gelo);
+    border-bottom: 2px solid var(--cor-vermelho);
+    padding-bottom: 5px;
+}

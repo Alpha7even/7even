@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ser Vital - Orçamento de Gesso e Pintura</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Ser Vital</h1>
+            <p>Orçamento rápido e eficiente para serviços de gesso e pintura</p>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="hero">
+        <h2>Precisa de um orçamento de acabamento em gesso e pintura?</h2>
+        <p>Preencha as informações abaixo e receba seu orçamento gratuitamente!</p>
+        <a href="#formulario" class="cta-button">Solicite Seu Orçamento</a>
+    </section>
+
+    <!-- Formulário de Orçamento -->
+    <section id="formulario">
+        <h2>Preencha para receber seu orçamento</h2>
+        <form action="enviar_orcamento.php" method="post">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="servico">Serviço Desejado</label>
+            <select id="servico" name="servico">
+                <option value="gesso">Acabamento em Gesso</option>
+                <option value="pintura">Pintura</option>
+                <option value="gesso-pintura">Gesso e Pintura</option>
+            </select>
+
+            <label for="detalhes">Detalhes adicionais</label>
+            <textarea id="detalhes" name="detalhes"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2025 Ser Vital - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

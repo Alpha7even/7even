@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/base/normalize.css">
+    <link rel="stylesheet" href="/assets/css/base/styles.css">
+    <link rel="stylesheet" href="/src/css/normalize.css">
     <title>Alpha7even</title>
 </head>
 <body>
@@ -11,24 +13,31 @@
         <div id="logo">
             <h1>Alpha<span class="red">7even</span></h1>
         </div>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div id="menu">
             <a href="index.html">Home</a>
-            <a href="Estilo.html">Estilo</a>
+            <a href="estilo.html">Estilo</a>
             <a href="Saúde.html">Saúde</a>
-            <a href="Desenvolvimento.html">Desenvolvimento</a>
-            <a href="Tecnologia.html">Tecnologia</a>
-            <a href="Relacionamentos.html">Relacionamentos</a>           
+            <a href="desenvolvimento.html">Desenvolvimento</a>
+            <a href="tecnologia.html">Tecnologia</a>
+            <a href="relacionamentos.html">Relacionamentos</a>
+            <a href="/public/login/login.html">Login</a>
         </div>
     </div>
+    
     <div id="body">
         <!--Abertura Postagem-->
-        <div id="Postagem">
+        <div id="postagem">
             <h2>Desperte Seu Poder na Cama</h2>
             <span> Transforme Sua Vida Sexual</span>
             <img src="/imagens/relacionamento/casalseparadosnacama.png" alt="">
             <p>Descubra técnicas simples para ter controle total na cama, dar prazer de verdade e elevar sua confiança. Clique agora e mude sua vida!</p>
         <br>
-            <a href="/artigos/relacionamento/desempenho/ohomemqueelasquerem.html">Saiba Mais...</a>
+            <a href="/public/blog/relacionamento/desempenho/ohomemqueelasquerem.html">Saiba Mais...</a>
 <hr>
          <br><!--Abertura Postagem-->
             <h2>Conquiste o Shape dos Sonhos</h2>
@@ -73,5 +82,6 @@
        <br>
        
     </div>
+    <script src="/assets/js/modules/home.js"></script>
 </body>
 </html>

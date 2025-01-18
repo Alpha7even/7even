@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Loguin</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/base/cadastroEloguin.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Seção de Login -->
+        <div class="formWrapper sign-in">
+            <form action="#" method="post">
+                <h2>Login</h2>
+                <div class="inputGroup">
+                    <input type="text" name="username" required>
+                    <label for="username">Login:</label>
+                </div>
+                <div class="inputGroup">
+                    <input type="password" name="password" required>
+                    <label for="password">Senha:</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox" name="remember"> Lembre-me</label>
+                </div>
+                <button type="submit">Entrar</button>
+                <div class="signUp-link">
+                    <p>Olá,Não tem Cadastro? 
+                        <a href="#" class="signUpBtn-link">Cadastra-se</a>
+                    </p> 
+                </div>
+            </form>
+        </div>
+        <!-- Seção de Cadastro -->
+        <div class="formWrapper sign-up">
+            <form action="#" method="post">
+                <h2>Cadastro</h2>
+                <div class="inputGroup">
+                    <input type="text" name="username" required>
+                    <label for="username">Login</label>
+                </div>
+                <div class="inputGroup">
+                    <input type="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputGroup">
+                    <input type="password" name="password" required>
+                    <label for="password">Senha</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox" name="terms" required> Aceito os termos e condições</label>
+                </div>
+                <button type="submit">Cadastrar</button>
+                <div class="signUp-link">
+                    <p>Olá, faça seu login? 
+                        <a href="#" class="signInBtn-link">Entrar...</a>
+                    </p> 
+                </div>
+            </form>
+        </div>
+    </div> 
+    <script src="/assets/js/utils/scriptCadastroLogin.js"></script>   
+</body>
+</html>
+
+
+
